@@ -19,8 +19,9 @@
         </p>
       </header>
   
-      <main>
-        <div class="col-md-4 text-center">
+      <main class="container">
+        <div class="row justify-content-around">
+        <div id="left-sec" class="col-md-4 text-center">
     
           <div class="card">
             <h3 class="card-header text-uppercase">Search By City</h3>
@@ -30,5 +31,12 @@
                 <button type="submit">Proceed</button>
             </form>
           </div>
+        </div>
+          <div id="right-sec" class="col-md-6 text-right">
+            <h2>Enter a city to see the weather for it. <span id="weather-search"></span></h2>
+            <div id="weather-container" class="list-group"></div>
+          </div>
+        </div>
+        </main>
 </body>
 </html>
