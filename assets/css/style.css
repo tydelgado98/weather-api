@@ -7,9 +7,20 @@
 }
 
 header{
-    background-color: #fff;
+    background-color: #eeee;
     border-bottom: 1px solid #c2bcbc;
     padding: 10px;
+    margin-top: 0;
    padding-bottom: 20px;
     border-radius: 5px;
 }
+
+main {
+    margin: 0;
+}
+body {
+    background-color: white;
+}
+
+
+/* #f2f2f2 */
