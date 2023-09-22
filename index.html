@@ -23,7 +23,19 @@
           <div id="left-sec" class="col-md-5 text-center">
             <div class="card">
               <h3 class="card-header text-uppercase">Search By City</h3>
-              
+              <form id="city-form" class="card-body">
+                <label class="form-label" for="city">City</label>
+                <input placeholder="Boston" name="city" id="city" type="text" autofocus="true" class="col-md-2 form-input" />
+                <button type="submit">Proceed</button>
+              </form>
+            </div>
+          </div>
+          <div id="right-sec" class="col-md-6 text-right">
+            <h2 class="h5 text-center">Enter a city to see the weather for it. <span></span></h2>
+            <div id="current-weather" class="list-group"></div>
+          </div>
+        </div>
+        </div>
       </main>
   
       
