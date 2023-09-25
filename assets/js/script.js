@@ -7,3 +7,12 @@ let currentWeather = document.querySelector("#current-weather");
 let formSubmit = function (event) {
     event.preventDefault();
     let cityName = cityInput.value.trim();
+    console.log(cityName);
+    if (cityName) {
+        getCityWeather(cityName);
+        getFiveDay(cityName);
+        pastSearch(cityName);
+        cityInput.value = "";
+    } else {
+        alert("Please enter a City");
+    } };
