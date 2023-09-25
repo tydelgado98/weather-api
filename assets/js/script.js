@@ -1,5 +1,5 @@
 let titleEl = document.querySelector("#tile");
-cityForm = document.querySelector("#city-form");
-cityInput = document.querySelector("#city");
+let cityForm = document.querySelector("#city-form");
+let cityInput = document.querySelector("#city");
 pastLocations = document.querySelector("#past-locate");
 currentWeather = document.querySelector("#current-weather");
