@@ -37,9 +37,14 @@ let formSubmit = function (event) {
 
         fetch(queryURL)
         .then(function (res){
+            if (res.ok) {
+                res.json().then(function (data) {
+                    displayWeather(data, city);
+                });
+            }
 
 
-            
+
         })
 
 
