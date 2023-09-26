@@ -17,19 +17,36 @@ let currentWeather = document.querySelector("#current-weather");
 
 
 let formSubmit = function (event) {
+ event.preventDefault();
 
-    event.preventDefault();
     let cityName = cityInput.value.trim();
     cityName = cityName.charAt(0).toUpperCase() + cityName.slice(1);
     console.log(cityName);
+
     if (cityName) {
         // getCityWeather(cityName);
         // getFiveDay(cityName);
         // pastSearch(cityName);
-        cityInput.value = "";
+        cityInput.value = '';
     } else {
         alert("Please enter a City");
-    } };
+    }
+
+    let getCityWeather = function (city) {
+        let 
+
+
+
+
+
+
+
+
+
+
+
+
+ };
 
 
 
