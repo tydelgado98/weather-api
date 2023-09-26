@@ -6,8 +6,14 @@ let currentWeather = document.querySelector("#current-weather");
 
 
 
+// make a function to get the weather
+
+
+
+
 
 let formSubmit = function (event) {
+
     event.preventDefault();
     let cityName = cityInput.value.trim();
     cityName = cityName.charAt(0).toUpperCase() + cityName.slice(1);
