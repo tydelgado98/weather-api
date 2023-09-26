@@ -10,6 +10,8 @@ let currentWeather = document.querySelector("#current-weather");
 // get api key from open weather
 // make a fetch request to the url
 // make a function to display the weather
+// get the data from the api and put it in the html
+// make cards for the 5 day forecast
 
 
 
