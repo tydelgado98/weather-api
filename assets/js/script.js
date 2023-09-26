@@ -31,6 +31,8 @@ let formSubmit = function (event) {
     } else {
         alert("Please enter a City");
     }
+};
+
 
     let getCityWeather = function (city) {
         let queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
@@ -48,18 +50,15 @@ let formSubmit = function (event) {
             }
         })
         .catch(function (err) {
+            alert("Unable to connect to Weather Dashboard");
+        });
+    };
 
 
 
 
 
 
-
-    }
-
-
-
- };
 
 
 
