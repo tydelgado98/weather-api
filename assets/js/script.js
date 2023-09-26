@@ -9,6 +9,7 @@ let currentWeather = document.querySelector("#current-weather");
 // make a function to get the weather
 // get api key from open weather
 // make a fetch request to the url
+// make a function to display the weather
 
 
 
