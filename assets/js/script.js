@@ -13,7 +13,7 @@ let currentWeather = document.querySelector("#current-weather");
 // get the data from the api and put it in the html
 // make cards for the 5 day forecast
 
-
+// api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 
 let formSubmit = function (event) {
