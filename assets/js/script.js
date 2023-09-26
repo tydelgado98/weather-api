@@ -24,7 +24,7 @@ let formSubmit = function (event) {
     console.log(cityName);
 
     if (cityName) {
-        // getCityWeather(cityName);
+        getCityWeather(cityName);
         // getFiveDay(cityName);
         // pastSearch(cityName);
         cityInput.value = '';
@@ -43,16 +43,19 @@ let formSubmit = function (event) {
                 console.log(res);
                 res.json().then(function (data) {
                     console.log(data);
-                    displayWeather(data, city);
+                    // displayWeather(data, city);
                 });
-            } else {
-                alert("Error: " + res.statusText);
             }
-        })
-        .catch(function (err) {
-            alert("Unable to connect to Weather Dashboard");
-        });
-    };
+        }
+        )}
+    //         } else {
+    //             alert("Error: " + res.statusText);
+    //         }
+    //     })
+    //     .catch(function (err) {
+    //         alert("Unable to connect to Weather Dashboard");
+    //     });
+    // };
 
 
 
