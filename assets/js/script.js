@@ -47,15 +47,7 @@ let formSubmit = function (event) {
                 });
             }
         }
-        )}
-    //         } else {
-    //             alert("Error: " + res.statusText);
-    //         }
-    //     })
-    //     .catch(function (err) {
-    //         alert("Unable to connect to Weather Dashboard");
-    //     });
-    // };
+        )}; 
 
 
 
