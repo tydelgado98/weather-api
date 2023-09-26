@@ -41,6 +41,8 @@ let formSubmit = function (event) {
                 res.json().then(function (data) {
                     displayWeather(data, city);
                 });
+            } else {
+                alert("Error: " + res.statusText);
             }
 
 
