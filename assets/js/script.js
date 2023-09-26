@@ -5,7 +5,7 @@ let pastLocations = document.querySelector("#past-locate");
 let currentWeather = document.querySelector("#current-weather");
 
 
-
+let APIKey = "a0b2b0b0b0b0b0b0b0b0b0b0b0b0b0b0";
 // make a function to get the weather
 // get api key from open weather
 // make a fetch request to the url
@@ -33,7 +33,7 @@ let formSubmit = function (event) {
     }
 
     let getCityWeather = function (city) {
-        let api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+        let 
 
 
 
@@ -42,7 +42,7 @@ let formSubmit = function (event) {
 
 
 
-
+    }
 
 
 
