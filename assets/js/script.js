@@ -38,16 +38,16 @@ let formSubmit = function (event) {
         fetch(queryURL)
         .then(function (res){
             if (res.ok) {
+                console.log(res);
                 res.json().then(function (data) {
+                    console.log(data);
                     displayWeather(data, city);
                 });
             } else {
                 alert("Error: " + res.statusText);
             }
-
-
-
         })
+        .catch(function (err) {
 
 
 
