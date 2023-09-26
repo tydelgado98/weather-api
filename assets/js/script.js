@@ -36,7 +36,11 @@ let formSubmit = function (event) {
         let queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
 
         fetch(queryURL)
-        .then(function)
+        .then(function (res){
+
+
+            
+        })
 
 
 
