@@ -50,6 +50,9 @@ let formSubmit = function (event) {
         )}; 
 
 //i want to make a if statement on countries and show their abreviations
+// let displayWeather = function (weather, searchCity) {
+//     // clear old content
+
 
 
 
