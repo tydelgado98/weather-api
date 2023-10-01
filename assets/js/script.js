@@ -44,13 +44,16 @@ let formSubmit = function (event) {
                 res.json().then(function (data) {
                     console.log(data);
                     // displayWeather(data, city);
+
                 });
+            } else {
+                alert("Error: " + res.statusText);
             }
         }
         )}; 
 
 //i want to make a if statement on countries and show their abreviations
-let displayWeather = function (weather, searchCity) {
+// let displayWeather = function (weather, searchCity) {
 //     // clear old content
 //     currentWeather.textContent = "";
 //     titleEl.textContent = searchCity;
