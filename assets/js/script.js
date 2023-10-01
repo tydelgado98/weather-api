@@ -3,6 +3,7 @@ let cityForm = document.querySelector("#city-form");
 let cityInput = document.querySelector("#city");
 let pastLocations = document.querySelector("#past-locate");
 let currentWeather = document.querySelector("#current-weather");
+let weatherSearch = document.querySelector("#weather-term");
 
 
 let APIKey = "3be2b2b6acc21e3760901d15acf91f72";
@@ -56,7 +57,7 @@ let formSubmit = function (event) {
         let displayWeather = function (weather, searchCity) {
             
             
-
+            weatherSearch.textContent = searchCity;
 
 
 
