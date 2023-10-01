@@ -25,7 +25,7 @@ let formSubmit = function (event) {
 
     if (cityName) {
         getCityWeather(cityName);
-        // getFiveDay(cityName);
+     
         // pastSearch(cityName);
         cityInput.value = '';
     } else {
@@ -51,6 +51,9 @@ let formSubmit = function (event) {
             }
         }
         )}; 
+
+
+        let pastSearch = function (pastSearch) {
 
 //i want to make a if statement on countries and show their abreviations
 // let displayWeather = function (weather, searchCity) {
