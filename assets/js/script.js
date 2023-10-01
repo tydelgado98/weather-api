@@ -43,7 +43,7 @@ let formSubmit = function (event) {
                 console.log(res);
                 res.json().then(function (data) {
                     console.log(data);
-                    // displayWeather(data, city);
+                    displayWeather(data, city);
 
                 });
             } else {
@@ -53,7 +53,27 @@ let formSubmit = function (event) {
         )}; 
 
 
-        let pastSearch = function (pastSearch) {
+        let displayWeather = function (weather, searchCity) {
+            
+            
+
+
+
+
+
+
+
+        };
+
+
+
+
+
+
+
+
+
+        // let pastSearch = function (pastSearch) {
 
 //i want to make a if statement on countries and show their abreviations
 // let displayWeather = function (weather, searchCity) {
