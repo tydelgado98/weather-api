@@ -59,17 +59,17 @@ let formSubmit = function (event) {
             
             weatherSearch.textContent = searchCity;
 
-            for(let i = 0; weather[i]; i++) {
+            for(let i = 0; i < weather.length; i++) {
 
             let weatherName = weather[i].main.temp;
-
+                weatherSearch.textContent = weatherName;
         
-
+            console.log(weatherName);
 
                 
             }
            
-            console.log(weatherName);
+            
 
 
 
