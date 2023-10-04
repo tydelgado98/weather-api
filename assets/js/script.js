@@ -58,9 +58,9 @@ let formSubmit = function (event) {
             
             
             weatherSearch.textContent = searchCity;
-            // clear old content
-            // currentWeather.textContent = "";
-            // titleEl.textContent = searchCity;
+
+            for(let i = 0;)
+           
 
 
 
