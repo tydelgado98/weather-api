@@ -59,7 +59,7 @@ let formSubmit = function (event) {
             
             weatherSearch.textContent = searchCity;
 
-            for(let i = 0;)
+            for(let i = 0; weather[i]; i++) {
            
 
 
