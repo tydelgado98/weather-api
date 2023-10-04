@@ -58,6 +58,7 @@ let formSubmit = function (event) {
 
             weatherSearch.textContent = searchCity;
          
+            
 
 
 
@@ -73,15 +74,6 @@ let formSubmit = function (event) {
 
 
 
-
-
-        // let pastSearch = function (pastSearch) {
-
-//i want to make a if statement on countries and show their abreviations
-// let displayWeather = function (weather, searchCity) {
-//     // clear old content
-//     currentWeather.textContent = "";
-//     titleEl.textContent = searchCity;
 
 
 
