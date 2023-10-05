@@ -57,8 +57,9 @@ let formSubmit = function (event) {
         let displayWeather = function (weather, searchCity) {
 
             weatherSearch.textContent = searchCity;
-         let oldLocal.textContent = searchCity;
-            oldLocal = document.createElement('button');
+            currentWeather.innerHTML = "";
+            let oldLocal = document.createElement('button');
+            oldLocal.textContent = searchCity;
             oldLocal.classList = "btn btn-secondary btn-lg btn-block";
             pastLocations.appendChild(oldLocal);
             
