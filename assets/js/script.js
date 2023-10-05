@@ -57,12 +57,19 @@ let formSubmit = function (event) {
         let displayWeather = function (weather, searchCity) {
 
             weatherSearch.textContent = searchCity;
+
             pastLocations.innerHTML = "";
             let oldLocal = document.createElement('button');
             oldLocal.textContent = searchCity;
             oldLocal.classList = "btn btn-secondary btn-lg btn-block";
             pastLocations.appendChild(oldLocal);
             
+            weatherSearch.innerHTML = `
+            <div class="card text-white bg-primary" style="max-width: 15rem;">
+            <h5 class="card-title mt-3">City: ${weather.name}</h5>
+            <p class="card-text mb-3">Temp: ${weather.main.temp}</p>
+            </div>
+            `
 
 
 
