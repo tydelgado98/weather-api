@@ -59,6 +59,7 @@ let formSubmit = function (event) {
             weatherSearch.textContent = searchCity;
             pastLocations.textContent = searchCity;
             pastLocations.document.createElement("button");
+            pastLocations.appendChild(pastLocations);
             
 
 
