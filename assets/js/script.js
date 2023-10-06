@@ -56,8 +56,7 @@ let formSubmit = function (event) {
 
         let displayWeather = function (weather, searchCity) {
 
-            weatherSearch.textContent = searchCity;
-
+            
             pastLocations.innerHTML = "";
             let oldLocal = document.createElement('button');
             oldLocal.textContent = searchCity;
@@ -72,10 +71,15 @@ let formSubmit = function (event) {
             <p class="card-text mb-3">Max° : ${weather.main.temp_max}</p>
             </div>
             `
-
             
         };
 
+        let displayFiveDays = function (weather) {
+
+
+            
+
+        }
 
 
 
