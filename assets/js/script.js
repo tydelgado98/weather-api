@@ -76,13 +76,10 @@ let formSubmit = function (event) {
 
         let displayFiveDays = function (weather, searchCity) {
 
-            let forecast = weather.list;
-            console.log(forecast);
             for (let i = 0; i < 5; i++) {
-                let dayWeather = forecast[i];
+                let dayWeather = weather[i].main.temp;
                 console.log(dayWeather);
             }
-
 
 
 
