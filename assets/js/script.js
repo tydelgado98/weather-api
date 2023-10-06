@@ -77,7 +77,9 @@ let formSubmit = function (event) {
         let displayFiveDays = function (weather, searchCity) {
 
             for (let i = 0; i < 5; i++) {
-                let dayWeather = weather.main.temp;
+
+                let dayWeather = weather[i].main.temp;
+                dayWeather.textContent = searchCity;
                 console.log(`Temperature for Day ${i + 1}: ${dayWeather}°F`);
             }
             
