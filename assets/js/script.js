@@ -67,16 +67,11 @@ let formSubmit = function (event) {
             weatherSearch.innerHTML = `
             <div class="card text-white bg-primary" style="max-width: 15rem;">
             <h5 class="card-title mt-3">City: ${weather.name}</h5>
-            <p class="card-text mb-3">Temp °: ${weather.main.temp}</p>
-            <p class="card-text mb-3">Min: ${weather.main.temp_min}</p>
-            <p class="card-text mb-3">Max: ${weather.main.temp_max}</p>
+            <p class="card-text mb-3">Temp° : ${weather.main.temp}</p>
+            <p class="card-text mb-3">Min° : ${weather.main.temp_min}</p>
+            <p class="card-text mb-3">Max° : ${weather.main.temp_max}</p>
             </div>
             `
-
-
-
-
-           
 
             
         };
