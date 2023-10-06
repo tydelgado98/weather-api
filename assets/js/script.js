@@ -44,7 +44,7 @@ let formSubmit = function (event) {
                 console.log(res);
                 res.json().then(function (data) {
                     console.log(data);
-                    displayWeather(data, city);
+                    displayFiveDays(data, city);
 
                 });
             } else {
@@ -74,10 +74,15 @@ let formSubmit = function (event) {
             
         };
 
-        let displayFiveDays = function (weather) {
+        let displayFiveDays = function (weather, searchCity) {
+
+            let forecast = weather.list;
+            console.log(forecast);
+          
 
 
-            
+
+
 
         }
 
