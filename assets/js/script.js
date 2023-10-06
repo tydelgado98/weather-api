@@ -36,7 +36,7 @@ let formSubmit = function (event) {
 
 
     let getCityWeather = function (city) {
-        let queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
+        let queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=imperial";
 
         fetch(queryURL)
         .then(function (res){
@@ -56,7 +56,7 @@ let formSubmit = function (event) {
 
         let displayWeather = function (weather, searchCity) {
 
-            
+            console.log(weather);
             pastLocations.innerHTML = "";
             let oldLocal = document.createElement('button');
             oldLocal.textContent = searchCity;
@@ -75,19 +75,14 @@ let formSubmit = function (event) {
         };
 
         let displayFiveDays = function (weather, searchCity) {
-
             for (let i = 0; i < 5; i++) {
 
-                let dayWeather = weather[i].main.temp;
-                dayWeather.textContent = searchCity;
+                let dayWeather = weather.list[i].main.temp;
                 console.log(`Temperature for Day ${i + 1}: ${dayWeather}°F`);
             }
-            
-
-
-
-
-        }
+        };
+        
+        
 
 
 
