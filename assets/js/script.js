@@ -17,6 +17,8 @@ let APIKey = "3be2b2b6acc21e3760901d15acf91f72";
 // 
 
 
+
+
 let formSubmit = function (event) {
  event.preventDefault();
 
@@ -77,13 +79,16 @@ let formSubmit = function (event) {
         let displayFiveDays = function (weather, searchCity) {
             for (let i = 0; i < 5; i++) {
 
+                const today = dayjs(); // Get the current date
+                const day = today.add(i, 'day'); // Calculate the date for the current day in the loop
+                const formattedDate = day.format('MMMM D, YYYY');
                 let dayWeather = weather.list[i].main.temp;
                 console.log(`Temperature for Day ${i + 1}: ${dayWeather}°F`);
                 weatherSearch.innerHTML += `
                 <div class="card text-white bg-primary" style="max-width: 15rem;">
                 <h5 class="card-title mt-3">${formattedDate}</h5>
                 <p class="card-text mb-3">Temp° : ${weather.list[i].main.temp}</p>
-                <p class="card-text mb-3">Min° : ${weather.list[i].main.temp_min}</p>
+                <p class="card-text mb-3">FeelsLike : ${weather.list[i].main.feels_like}</p>
                 <p class="card-text mb-3">Max° : ${weather.list[i].main.temp_max}</p>
                 </div>
                 `
