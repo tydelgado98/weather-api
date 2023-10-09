@@ -81,10 +81,10 @@ let formSubmit = function (event) {
                 console.log(`Temperature for Day ${i + 1}: ${dayWeather}°F`);
                 weatherSearch.innerHTML = `
                 <div class="card text-white bg-primary" style="max-width: 15rem;">
-                <h5 class="card-title mt-3">City: ${weather.name}</h5>
+                <h5 class="card-title mt-3">City: ${weather.list}</h5>
                 <p class="card-text mb-3">Temp° : ${weather.list[i].main.temp}</p>
-                <p class="card-text mb-3">Min° : ${weather.main.temp_min}</p>
-                <p class="card-text mb-3">Max° : ${weather.main.temp_max}</p>
+                <p class="card-text mb-3">Min° : ${weather.list[i].main.temp_min}</p>
+                <p class="card-text mb-3">Max° : ${weather.list[i].main.temp_max}</p>
                 </div>
                 `
             }
