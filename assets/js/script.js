@@ -87,10 +87,10 @@ let formSubmit = function (event) {
                 weatherSearch.innerHTML += `
                 <div class="card text-white bg-primary" style="max-width: 10rem;">
                 <h5 class="card-title mt-3">${formattedDate}</h5>
-                <img src="http://openweathermap.org/img/w/${weather.list[i].weather[0].icon}.png" alt="weather icon">
+                <img src="http://openweathermap.org/img/w/${weather.list[i].weather[0].icon}.png" alt="weather icon" style:"60px;">
                 <h6 class="card-text mb-3">Temp : ${weather.list[i].main.temp}°F</h6>
                 <h6 class="card-text mb-3">Wind : ${weather.list[i].wind.speed}MPH</h6>
-                <p class="card-text mb-3">Humidity : ${weather.list[i].main.humidity}%</p>
+                <h6 class="card-text mb-3">Humidity : ${weather.list[i].main.humidity}%</h6>
                 </div>
                 `
             }
