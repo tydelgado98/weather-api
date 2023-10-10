@@ -85,9 +85,9 @@ let formSubmit = function (event) {
                 let dayWeather = weather.list[i].main.temp;
                 console.log(`Temperature for Day ${i + 1}: ${dayWeather}°F`);
                 weatherSearch.innerHTML += `
-                <div class="card text-white bg-primary" style="max-width: 10rem;">
+                <div class="card text-white bg-primary" style="max-width: 10rem;" style="max-height: 10rem;>
                 <h5 class="card-title mt-3">${formattedDate}</h5>
-                <img src="http://openweathermap.org/img/w/${weather.list[i].weather[0].icon}.png" alt="weather icon" style="max-width: 9rem;">
+                <img src="http://openweathermap.org/img/w/${weather.list[i].weather[0].icon}.png" alt="weather icon" style="max-width: 8.5rem;">
                 <h6 class="card-text mb-3">Temp : ${weather.list[i].main.temp}°F</h6>
                 <h6 class="card-text mb-3">Wind : ${weather.list[i].wind.speed}MPH</h6>
                 <h6 class="card-text mb-3">Humidity : ${weather.list[i].main.humidity}%</h6>
