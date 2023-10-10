@@ -60,6 +60,7 @@ let formSubmit = function (event) {
 
             console.log(weather);
             pastLocations.innerHTML = "";
+            weatherSearch.innerHTML = "";
             let oldLocal = document.createElement('button');
             oldLocal.textContent = searchCity;
             oldLocal.classList = "btn btn-secondary btn-lg btn-block";
@@ -78,7 +79,6 @@ let formSubmit = function (event) {
 
         let displayFiveDays = function (weather, searchCity) {
             for (let i = 0; i < 5; i++) {
-
                 const today = dayjs(); // Get the current date
                 const day = today.add(i, 'day'); // Calculate the date for the current day in the loop
                 const formattedDate = day.format('MMMM D, YYYY');
